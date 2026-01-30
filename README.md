@@ -19,12 +19,20 @@ cd queueless-campus-hd
 touch .env
 ```
 
-2. Add MongoDB connection string to the `.env` file:
+2. Add your MongoDB connection string to the `.env` file:
 
 ```env
-MONGO_URI=mongodb+srv://queueless_user:Vkn1qIlLjyIrYpj2@cluster0.slothtf.mongodb.net/?appName=Cluster0
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/queueless?retryWrites=true&w=majority
 PORT=8080
 ```
+
+**Note for Markers:**
+The MongoDB connection string is **NOT included** in this public repository for security reasons. The required `MONGO_URI` will be provided separately in the OnTrack submission comments.
+
+**To obtain the connection string:**
+- Check the OnTrack submission comments for the `MONGO_URI` value
+- Copy it exactly as provided into your `.env` file
+- Ensure there are no extra spaces or line breaks
 
 ### Step 3: Build and Start the Application
 
