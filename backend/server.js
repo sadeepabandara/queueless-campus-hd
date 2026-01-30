@@ -27,6 +27,14 @@ app.get('/', (req, res) => {
     res.send('QueueLess Campus API running');
 });
 
+// Student ID endpoint for HD task
+app.get('/api/student', (req, res) => {
+    res.json({
+        name: 'Sadeepa Bandara Marasinghe Mudiyanselage',
+        studentId: 's224779675',
+    });
+});
+
 // Server start
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
